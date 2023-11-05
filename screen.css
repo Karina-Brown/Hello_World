@@ -3,6 +3,7 @@ body {
     font-family: Helvetica, sans-serif;
     border-top: 15px solid #424242;
     margin: 0 auto;
+    color: #424242;
 }
 
 main {
@@ -11,9 +12,7 @@ main {
 }
 
 .masthead {
-    background-image: url('images/mac.jpg');
-    background-size: cover;
-    background-position: bottom;
+    background: no-repeat bottom / cover url('images/mac.jpg');
     height: 200px;
     border-radius: 20px;
 }
@@ -25,21 +24,49 @@ main {
 .details section {
     flex-grow: 1;
     flex-basis: 0;
-    background: #D3D3D3;
-    padding: 25px;
+    background: #E9EAEC;
     border-radius: 20px;
     margin-top: 25px;
 }
 
+.details section p {
+    margin: 25px;
+}
+
+.details section h2 {
+    margin: 25px;
+}
+
+.details section.with-code {
+    padding: 0;
+    line-height: 1.4em;
+}
+
+div.code-html {
+    padding: 25px;
+    background: #424242;
+    color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
 img {
     width: 100%;
 }
 
+h1 {
+    background-image: url('images/Logo.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center left;
+    font-size: 3em;
+    padding-left: 55px;
+    margin: 100px 0 25px 0;
+}
 h2 {
     margin: 0 0 10px 0;
 }
 
 p {
     margin: 0;
-    line-height: 1.4em;
+    line-height: 1.6em;
 }
